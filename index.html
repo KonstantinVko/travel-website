@@ -1,10 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Fancy Adventures</title>
 </head>
 <body>
+<div class="main-container">
+    <div class="hero-section">
+        <video autoplay loop muted>
+            <source src="videos/hero-video.mp4">
+        </video>
+        <div class="wrap">
+            <div class="header">
+                <div class="icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="logo">MITRAVEL</div>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="text">
+                <h3 class="h3-title">Mother Earth <br> Hosts Our Travels</h3>
+                <p>Never ever think of giving up. Winners never quit and quitters never win. Take all negative words out
+                    of your mental dictionary and focus on the solutions with utmost conviction and patience. The battle
+                    is never lost until you’ve abandon your vision.</p>
+            </div>
+            <div class="search">
+                <label>
+                    <input type="search" placeholder="Search stories">
+                    <button type="submit"><span>TO THE ADVENTURES</span><i class="fas fa-arrow-right"></i></button>
+                </label>
 
+            </div>
+        </div>
+    </div>
+    <div class="cards" data-aos="fade-up" data-aos-once="true" data-aos-duration="30020">
+        <h3 class="h3-title page-section__title">Become A Travel Pro In <br>One Easy Lesson</h3>
+        <div class="cards-wrap">
+            <div class="grid__column card" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                 data-aos-once="true">
+                <section class="card-insight">
+                    <div class="card-insight__img"></div>
+                    <h2 class="card-insight__title">Rural and Mountain Tourism</h2>
+                    <div class="card-insight-overlay">
+                        <p class="card-insight-overlay__text">Why Everyone Should Make A Trip To The Mountains</p>
+                        <button class="learn-more">Read</button>
+                    </div>
+                </section>
+            </div>
+            <div class="grid__column card" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                 data-aos-once="true">
+                <section class="card-insight">
+                    <div class="card-insight__img"></div>
+                    <h2 class="card-insight__title">Home Rental</h2>
+                    <div class="card-insight-overlay">
+                        <p class="card-insight-overlay__text">Vacation Home Rental Success</p>
+                        <button class="learn-more">Read</button>
+                    </div>
+                </section>
+            </div>
+            <div class="grid__column card" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                 data-aos-once="true">
+                <section class="card-insight">
+                    <div class="card-insight__img"></div>
+                    <h2 class="card-insight__title">Long Travel Tips</h2>
+                    <div class="card-insight-overlay">
+                        <p class="card-insight-overlay__text">How to travel wisely</p>
+                        <button class="learn-more">Read</button>
+                    </div>
+                </section>
+            </div>
+            <div class="grid__column card" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                 data-aos-once="true">
+                <section class="card-insight">
+                    <div class="card-insight__img"></div>
+                    <h2 class="card-insight__title">Beach Vacations</h2>
+                    <div class="card-insight-overlay">
+                        <p class="card-insight-overlay__text">Best Beaches in the World</p>
+                        <button class="learn-more">Read</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="stories" class="stories" data-aos="fade" data-aos-duration="40020" data-aos-once="true">
+        <div class="text">
+            <div class="wrap">
+                <div class="featured-icon">FEATURED</div>
+                <h3>How To Fly A Private Jet <br>On Your Next Trip</h3>
+                <p>The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon
+                    National Park ranks as three of the most magnificent & awe inspiring.</p>
+                <button type="submit">READ ARTICLE</button>
+            </div>
+        </div>
+        <div class="featured">
+            <h3>Featured <br>Stories</h3>
+            <div class="stories-block" data-aos="fade-left" data-aos-once="true">
+                <div class="story" data-aos="fade-left" data-aos-delay="50" data-aos-once="true"
+                     onmouseenter="changeBackground()">
+                    <div class="info">
+                        <div class="story-teller1"></div>
+                        <div class="quote">
+                            <span>Do A Sporting Stag Do In Birmingham</span>
+                            <span class="date">13 Dec 2020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story" data-aos="fade-left" data-aos-delay="100" data-aos-once="true"
+                     onmouseenter="changeBackground()">
+                    <div class="info">
+                        <div class="story-teller2"></div>
+                        <div class="quote">
+                            <span>From Wetlands To Amsterdam</span>
+                            <span class="date">17 Dec 2020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story" data-aos="fade-left" data-aos-delay="150" data-aos-once="true"
+                     onmouseenter="changeBackground()">
+                    <div class="info">
+                        <div class="story-teller3"></div>
+                        <div class="quote">
+                            <span>Low Cost Vacation On Water</span>
+                            <span class="date">16 Nov 2020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story" data-aos="fade-left" data-aos-delay="200" data-aos-once="true"
+                     onmouseenter="changeBackground()">
+                    <div class="info">
+                        <div class="story-teller4"></div>
+                        <div class="quote">
+                            <span>Rise And Fall Of A Genius</span>
+                            <span class="date">13 Jan 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="featured-videos-slider">
+        <h3 class="h3-title" data-aos="fade-down" data-aos-once="true">Featured Videos</h3>
+        <div class="swiper-container" data-aos="zoom-out" data-aos-delay="200" data-aos-once="true">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video class="swiper-vid" loop muted>
+                        <source src="videos/mountains.mp4">
+                    </video>
+                    <div class="play-button" onclick="playVideo(this.previousElementSibling, this)">
+                        <div class="triangle">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <video class="swiper-vid" loop muted>
+                        <source src="videos/beach.mp4">
+                    </video>
+                    <div class="play-button" onclick="playVideo(this.previousElementSibling, this)">
+                        <div class="triangle">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <video class="swiper-vid" loop muted>
+                        <source src="videos/sand.mp4">
+                    </video>
+                    <div class="play-button" onclick="playVideo(this.previousElementSibling, this)">
+                        <div class="triangle">
+                        </div>
+                    </div>
+            </div>
+        </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </div>
+
+    <div class="sing-up" data-aos="fade-up"
+         data-aos-anchor-placement="center-bottom">
+        <div class="text">
+            <div class="wrap">
+                <h3>Sign up our <br>Newsletter</h3>
+                <p>The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon
+                    National Park ranks as three of the most magnificent & awe inspiring.</p>
+            </div>
+        </div>
+        <form data-aos="fade-up">
+            <label>EMAIL</label>
+            <input type="email" name="email">
+            <input type="button" value="SIGN UP NOW">
+        </form>
+    </div>
+</div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
+<script src="main.js"></script>
+<script>
+    AOS.init();
+</script>
 </html>
